@@ -15,6 +15,7 @@
             class="block max-w-sm p-6 border-t-8 bg-white border-blue-700 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-blue-700 dark:hover:bg-gray-700"
           >
             <form th:action="@{/do-register}" method="post" th:object="${userform}">
+              <div th:replace="~{message :: message(${message})}"></div>
               <h1 class="block text-2xl font-bold mb-5 dark:text-white">
                 SignUp here
               </h1>
